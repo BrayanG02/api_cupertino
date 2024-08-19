@@ -3,7 +3,7 @@ import { getAll, getOne, insertOne, updateOne, deleteOne  } from "../controllers
 const router=Router();
 router.get('/getAll', getAll);
 router.post('/insertOne',insertOne);
-router.post('/getOne/:id',getOne);
+router.get('/getOne/:id',getOne);
 // Ruta para actualizar un estudiante
 router.put('/updateOne/:id', updateOne);
 // Ruta para eliminar un estudiante
